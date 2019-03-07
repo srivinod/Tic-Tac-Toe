@@ -41,11 +41,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .cross{
     color: #f90;
+    font-size: 2.5em;
+    border-radius: 5px;
+    line-height: 100px;
+}
+
+.winner{
+    display: none;
+    text-align: center;
+    margin: 15px 0px;
+    background: #e6e6e6;
+    padding: 10px;
+    color: #51a2a7;
+    font-size: 21px;
+    text-transform: uppercase;
+    animation: flashresult 0.5s linear infinite;
+}
+
+@keyframes flashresult {
+  50% {
+    opacity: 0;
+  }
+}
+
+.replay{
+    display: none;
+    text-align: center;        
+    margin: 15px 0px;
+    font-size: initial;
+    text-decoration: underline;
+}
+.replay-btn{
+    color: black !important;
+}
+.open{
+    color: #811ad8;
     font-size: 2.5em;
     border-radius: 5px;
     line-height: 100px;
